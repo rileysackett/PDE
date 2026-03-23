@@ -1,4 +1,4 @@
-#include "thomas_algorithm.h"
+#include "ThomasSolver.h"
 #include <stdexcept>
 
 using namespace std;
