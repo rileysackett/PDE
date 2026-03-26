@@ -16,7 +16,7 @@
 
     Need to know heat at $t=0$
 
-    Create the Grid: Create a std::vector<double> called $U$ to represent the interior points of our 1D rod.
+    Create the Grid: Create a std::vector<double> called U to represent the interior points of our 1D rod.
 
     Apply $f(x)$: Loop over every point in U and use the initial condition function to set the starting temperature for each specific point
 
@@ -29,3 +29,5 @@
     Boundary Corrections: Calculates the left and right boundary temperatures for the current time and adds those specific values to the very first and very last elements of our RHS vector
 
     Now have: $A \times U_{next} = RHS$. Input matrix A and the RHS vector into solveThomas function which returns $U_{next}$, which are the new temperatures
+
+    Write new temperatures to .csv file. Finally, make $U_{next}$ the new current temperature (U), loop restarts
